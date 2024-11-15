@@ -1,0 +1,258 @@
+2024-09-06 03:54:33,668 - selenium.webdriver.common.selenium_manager - DEBUG - Selenium Manager binary found at: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-09-06 03:54:33,668 - selenium.webdriver.common.selenium_manager - DEBUG - Executing process: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --debug --language-binding python --output json
+2024-09-06 03:54:34,051 - selenium.webdriver.common.selenium_manager - DEBUG - geckodriver not found in PATH
+2024-09-06 03:54:34,051 - selenium.webdriver.common.selenium_manager - DEBUG - firefox detected at C:\Program Files\Mozilla Firefox\firefox.exe
+2024-09-06 03:54:34,052 - selenium.webdriver.common.selenium_manager - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Mozilla Firefox\\firefox.exe' get Version /value
+2024-09-06 03:54:34,052 - selenium.webdriver.common.selenium_manager - DEBUG - Output: "\r\r\n\r\r\nVersion=127.0.0.8923\r\r\n\r\r\n\r\r\n\r"
+2024-09-06 03:54:34,053 - selenium.webdriver.common.selenium_manager - DEBUG - Detected browser: firefox 127.0.0.8923
+2024-09-06 03:54:34,053 - selenium.webdriver.common.selenium_manager - DEBUG - Required driver: geckodriver 0.35.0
+2024-09-06 03:54:34,053 - selenium.webdriver.common.selenium_manager - DEBUG - geckodriver 0.35.0 already in the cache
+2024-09-06 03:54:34,053 - selenium.webdriver.common.selenium_manager - DEBUG - Driver path: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-09-06 03:54:34,053 - selenium.webdriver.common.selenium_manager - DEBUG - Browser path: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-09-06 03:54:34,053 - selenium.webdriver.common.selenium_manager - DEBUG - Using driver at: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-09-06 03:54:34,060 - selenium.webdriver.common.service - DEBUG - Started executable: `C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe` in a child process with pid: 25528 using 0 to output -3
+2024-09-06 03:54:35,089 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'firefox', 'acceptInsecureCerts': True, 'moz:debuggerAddress': True, 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'moz:firefoxOptions': {'binary': 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'}}}}
+2024-09-06 03:54:35,092 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:62247
+2024-09-06 03:54:43,622 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session HTTP/1.1" 200 0
+2024-09-06 03:54:43,622 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"sessionId":"3f714c66-507f-4eec-85d7-a12d2424dc86","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"127.0","moz:accessibilityChecks":false,"moz:buildID":"20240606181944","moz:debuggerAddress":"127.0.0.1:62248","moz:geckodriverVersion":"0.35.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":19288,"moz:profile":"C:\\Users\\91900\\AppData\\Local\\Temp\\rust_mozprofileDSuY7x","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0"}}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '839', 'date': 'Thu, 05 Sep 2024 22:24:37 GMT'})
+2024-09-06 03:54:43,623 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:43,623 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/url {'url': 'https://practicetestautomation.com/practice-test-login/'}
+2024-09-06 03:54:46,784 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/url HTTP/1.1" 200 0
+2024-09-06 03:54:46,785 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:24:43 GMT'})
+2024-09-06 03:54:46,785 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:49,786 - tests.test_login - INFO - Starting login test with username: student
+2024-09-06 03:54:49,786 - pages.login_page - DEBUG - Entering username: student
+2024-09-06 03:54:49,786 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/element {'using': 'css selector', 'value': '[id="username"]'}
+2024-09-06 03:54:49,800 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/element HTTP/1.1" 200 0
+2024-09-06 03:54:49,801 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"113ed00d-e439-4df4-8ff8-1a279edf4a50"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:24:49 GMT'})
+2024-09-06 03:54:49,801 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:49,801 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/element/113ed00d-e439-4df4-8ff8-1a279edf4a50/value {'text': 'student', 'value': ['s', 't', 'u', 'd', 'e', 'n', 't']}
+2024-09-06 03:54:49,864 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/element/113ed00d-e439-4df4-8ff8-1a279edf4a50/value HTTP/1.1" 200 0
+2024-09-06 03:54:49,864 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:24:49 GMT'})
+2024-09-06 03:54:49,864 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:49,864 - pages.login_page - DEBUG - Entering password
+2024-09-06 03:54:49,864 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/element {'using': 'css selector', 'value': '[id="password"]'}
+2024-09-06 03:54:49,876 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/element HTTP/1.1" 200 0
+2024-09-06 03:54:49,876 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"501405d6-61b0-4d32-8414-dc32431ee3a9"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:24:49 GMT'})
+2024-09-06 03:54:49,876 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:49,876 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/element/501405d6-61b0-4d32-8414-dc32431ee3a9/value {'text': 'Password123', 'value': ['P', 'a', 's', 's', 'w', 'o', 'r', 'd', '1', '2', '3']}
+2024-09-06 03:54:49,897 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/element/501405d6-61b0-4d32-8414-dc32431ee3a9/value HTTP/1.1" 200 0
+2024-09-06 03:54:49,897 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:24:49 GMT'})
+2024-09-06 03:54:49,897 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:49,897 - pages.login_page - DEBUG - Clicking login button
+2024-09-06 03:54:49,897 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/element {'using': 'css selector', 'value': '[id="submit"]'}
+2024-09-06 03:54:49,904 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/element HTTP/1.1" 200 0
+2024-09-06 03:54:49,904 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0b0a80dd-b219-467c-8918-557b2fcad6db"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:24:49 GMT'})
+2024-09-06 03:54:49,905 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:49,905 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/element/0b0a80dd-b219-467c-8918-557b2fcad6db/click {}
+2024-09-06 03:54:53,484 - urllib3.connectionpool - DEBUG - http://localhost:62247 "POST /session/3f714c66-507f-4eec-85d7-a12d2424dc86/element/0b0a80dd-b219-467c-8918-557b2fcad6db/click HTTP/1.1" 200 0
+2024-09-06 03:54:53,484 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:24:49 GMT'})
+2024-09-06 03:54:53,484 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:53,484 - tests.test_login - INFO - Login button clicked
+2024-09-06 03:54:53,485 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/title {}
+2024-09-06 03:54:53,499 - urllib3.connectionpool - DEBUG - http://localhost:62247 "GET /session/3f714c66-507f-4eec-85d7-a12d2424dc86/title HTTP/1.1" 200 0
+2024-09-06 03:54:53,499 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:24:53 GMT'})
+2024-09-06 03:54:53,499 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:53,499 - pages.login_page - DEBUG - Page title after login: Logged In Successfully | Practice Test Automation
+2024-09-06 03:54:53,499 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86/title {}
+2024-09-06 03:54:53,504 - urllib3.connectionpool - DEBUG - http://localhost:62247 "GET /session/3f714c66-507f-4eec-85d7-a12d2424dc86/title HTTP/1.1" 200 0
+2024-09-06 03:54:53,505 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:24:53 GMT'})
+2024-09-06 03:54:53,505 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:54:53,505 - tests.test_login - INFO - Login successful with title: Logged In Successfully | Practice Test Automation
+2024-09-06 03:54:53,506 - selenium.webdriver.remote.remote_connection - DEBUG - DELETE http://localhost:62247/session/3f714c66-507f-4eec-85d7-a12d2424dc86 {}
+2024-09-06 03:54:54,813 - urllib3.connectionpool - DEBUG - http://localhost:62247 "DELETE /session/3f714c66-507f-4eec-85d7-a12d2424dc86 HTTP/1.1" 200 0
+2024-09-06 03:54:54,814 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:24:53 GMT'})
+2024-09-06 03:54:54,814 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:13,732 - selenium.webdriver.common.selenium_manager - DEBUG - Selenium Manager binary found at: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-09-06 03:55:13,733 - selenium.webdriver.common.selenium_manager - DEBUG - Executing process: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --debug --language-binding python --output json
+2024-09-06 03:55:14,072 - selenium.webdriver.common.selenium_manager - DEBUG - geckodriver not found in PATH
+2024-09-06 03:55:14,072 - selenium.webdriver.common.selenium_manager - DEBUG - firefox detected at C:\Program Files\Mozilla Firefox\firefox.exe
+2024-09-06 03:55:14,072 - selenium.webdriver.common.selenium_manager - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Mozilla Firefox\\firefox.exe' get Version /value
+2024-09-06 03:55:14,072 - selenium.webdriver.common.selenium_manager - DEBUG - Output: "\r\r\n\r\r\nVersion=127.0.0.8923\r\r\n\r\r\n\r\r\n\r"
+2024-09-06 03:55:14,073 - selenium.webdriver.common.selenium_manager - DEBUG - Detected browser: firefox 127.0.0.8923
+2024-09-06 03:55:14,073 - selenium.webdriver.common.selenium_manager - DEBUG - Required driver: geckodriver 0.35.0
+2024-09-06 03:55:14,073 - selenium.webdriver.common.selenium_manager - DEBUG - geckodriver 0.35.0 already in the cache
+2024-09-06 03:55:14,073 - selenium.webdriver.common.selenium_manager - DEBUG - Driver path: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-09-06 03:55:14,073 - selenium.webdriver.common.selenium_manager - DEBUG - Browser path: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-09-06 03:55:14,073 - selenium.webdriver.common.selenium_manager - DEBUG - Using driver at: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-09-06 03:55:14,078 - selenium.webdriver.common.service - DEBUG - Started executable: `C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe` in a child process with pid: 28972 using 0 to output -3
+2024-09-06 03:55:15,111 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'firefox', 'acceptInsecureCerts': True, 'moz:debuggerAddress': True, 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'moz:firefoxOptions': {'binary': 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'}}}}
+2024-09-06 03:55:15,114 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:62339
+2024-09-06 03:55:23,926 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session HTTP/1.1" 200 0
+2024-09-06 03:55:23,927 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"sessionId":"a8706c02-7257-4c6a-a53e-58812e978adb","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"127.0","moz:accessibilityChecks":false,"moz:buildID":"20240606181944","moz:debuggerAddress":"127.0.0.1:62340","moz:geckodriverVersion":"0.35.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":38940,"moz:profile":"C:\\Users\\91900\\AppData\\Local\\Temp\\rust_mozprofileO71zAz","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0"}}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '839', 'date': 'Thu, 05 Sep 2024 22:25:17 GMT'})
+2024-09-06 03:55:23,927 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:23,927 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/url {'url': 'https://practicetestautomation.com/practice-test-login/'}
+2024-09-06 03:55:27,404 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/url HTTP/1.1" 200 0
+2024-09-06 03:55:27,405 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:25:23 GMT'})
+2024-09-06 03:55:27,405 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:30,408 - tests.test_login - INFO - Starting login test with username: student
+2024-09-06 03:55:30,409 - pages.login_page - DEBUG - Entering username: student
+2024-09-06 03:55:30,411 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/element {'using': 'css selector', 'value': '[id="username"]'}
+2024-09-06 03:55:30,462 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/element HTTP/1.1" 200 0
+2024-09-06 03:55:30,463 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"156d8931-c6c3-4b15-a594-3ae183c4bde3"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:25:30 GMT'})
+2024-09-06 03:55:30,463 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:30,463 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/element/156d8931-c6c3-4b15-a594-3ae183c4bde3/value {'text': 'student', 'value': ['s', 't', 'u', 'd', 'e', 'n', 't']}
+2024-09-06 03:55:30,530 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/element/156d8931-c6c3-4b15-a594-3ae183c4bde3/value HTTP/1.1" 200 0
+2024-09-06 03:55:30,531 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:25:30 GMT'})
+2024-09-06 03:55:30,531 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:30,532 - pages.login_page - DEBUG - Entering password
+2024-09-06 03:55:30,532 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/element {'using': 'css selector', 'value': '[id="password"]'}
+2024-09-06 03:55:30,544 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/element HTTP/1.1" 200 0
+2024-09-06 03:55:30,544 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"5587ed3f-b7bb-41d1-ae7b-921d98a51051"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:25:30 GMT'})
+2024-09-06 03:55:30,544 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:30,545 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/element/5587ed3f-b7bb-41d1-ae7b-921d98a51051/value {'text': 'Password123', 'value': ['P', 'a', 's', 's', 'w', 'o', 'r', 'd', '1', '2', '3']}
+2024-09-06 03:55:30,568 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/element/5587ed3f-b7bb-41d1-ae7b-921d98a51051/value HTTP/1.1" 200 0
+2024-09-06 03:55:30,568 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:25:30 GMT'})
+2024-09-06 03:55:30,568 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:30,568 - pages.login_page - DEBUG - Clicking login button
+2024-09-06 03:55:30,569 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/element {'using': 'css selector', 'value': '[id="submit"]'}
+2024-09-06 03:55:30,574 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/element HTTP/1.1" 200 0
+2024-09-06 03:55:30,575 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"d8b0d210-d50b-47ca-aeee-1544953dcf31"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:25:30 GMT'})
+2024-09-06 03:55:30,575 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:30,575 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/element/d8b0d210-d50b-47ca-aeee-1544953dcf31/click {}
+2024-09-06 03:55:33,660 - urllib3.connectionpool - DEBUG - http://localhost:62339 "POST /session/a8706c02-7257-4c6a-a53e-58812e978adb/element/d8b0d210-d50b-47ca-aeee-1544953dcf31/click HTTP/1.1" 200 0
+2024-09-06 03:55:33,660 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:25:30 GMT'})
+2024-09-06 03:55:33,661 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:33,661 - tests.test_login - INFO - Login button clicked
+2024-09-06 03:55:33,661 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/title {}
+2024-09-06 03:55:33,665 - urllib3.connectionpool - DEBUG - http://localhost:62339 "GET /session/a8706c02-7257-4c6a-a53e-58812e978adb/title HTTP/1.1" 200 0
+2024-09-06 03:55:33,666 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:25:33 GMT'})
+2024-09-06 03:55:33,666 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:33,666 - pages.login_page - DEBUG - Page title after login: Logged In Successfully | Practice Test Automation
+2024-09-06 03:55:33,666 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb/title {}
+2024-09-06 03:55:33,673 - urllib3.connectionpool - DEBUG - http://localhost:62339 "GET /session/a8706c02-7257-4c6a-a53e-58812e978adb/title HTTP/1.1" 200 0
+2024-09-06 03:55:33,673 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:25:33 GMT'})
+2024-09-06 03:55:33,673 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:55:33,673 - tests.test_login - INFO - Login successful with title: Logged In Successfully | Practice Test Automation
+2024-09-06 03:55:33,674 - selenium.webdriver.remote.remote_connection - DEBUG - DELETE http://localhost:62339/session/a8706c02-7257-4c6a-a53e-58812e978adb {}
+2024-09-06 03:55:34,914 - urllib3.connectionpool - DEBUG - http://localhost:62339 "DELETE /session/a8706c02-7257-4c6a-a53e-58812e978adb HTTP/1.1" 200 0
+2024-09-06 03:55:34,914 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:25:33 GMT'})
+2024-09-06 03:55:34,914 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:56:48,243 - selenium.webdriver.common.selenium_manager - DEBUG - Selenium Manager binary found at: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-09-06 03:56:48,243 - selenium.webdriver.common.selenium_manager - DEBUG - Executing process: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --debug --language-binding python --output json
+2024-09-06 03:56:48,583 - selenium.webdriver.common.selenium_manager - DEBUG - geckodriver not found in PATH
+2024-09-06 03:56:48,584 - selenium.webdriver.common.selenium_manager - DEBUG - firefox detected at C:\Program Files\Mozilla Firefox\firefox.exe
+2024-09-06 03:56:48,584 - selenium.webdriver.common.selenium_manager - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Mozilla Firefox\\firefox.exe' get Version /value
+2024-09-06 03:56:48,584 - selenium.webdriver.common.selenium_manager - DEBUG - Output: "\r\r\n\r\r\nVersion=127.0.0.8923\r\r\n\r\r\n\r\r\n\r"
+2024-09-06 03:56:48,584 - selenium.webdriver.common.selenium_manager - DEBUG - Detected browser: firefox 127.0.0.8923
+2024-09-06 03:56:48,584 - selenium.webdriver.common.selenium_manager - DEBUG - Required driver: geckodriver 0.35.0
+2024-09-06 03:56:48,585 - selenium.webdriver.common.selenium_manager - DEBUG - geckodriver 0.35.0 already in the cache
+2024-09-06 03:56:48,585 - selenium.webdriver.common.selenium_manager - DEBUG - Driver path: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-09-06 03:56:48,585 - selenium.webdriver.common.selenium_manager - DEBUG - Browser path: C:\Program Files\Mozilla Firefox\firefox.exe
+2024-09-06 03:56:48,585 - selenium.webdriver.common.selenium_manager - DEBUG - Using driver at: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+2024-09-06 03:56:48,590 - selenium.webdriver.common.service - DEBUG - Started executable: `C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe` in a child process with pid: 29888 using 0 to output -3
+2024-09-06 03:56:49,616 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'firefox', 'acceptInsecureCerts': True, 'moz:debuggerAddress': True, 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'moz:firefoxOptions': {'binary': 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'}}}}
+2024-09-06 03:56:49,617 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:62483
+2024-09-06 03:56:58,282 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session HTTP/1.1" 200 0
+2024-09-06 03:56:58,282 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"sessionId":"2cafae62-702a-4966-9290-c28029ddd40c","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"127.0","moz:accessibilityChecks":false,"moz:buildID":"20240606181944","moz:debuggerAddress":"127.0.0.1:62484","moz:geckodriverVersion":"0.35.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":19640,"moz:profile":"C:\\Users\\91900\\AppData\\Local\\Temp\\rust_mozprofileUY5VWr","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0"}}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '839', 'date': 'Thu, 05 Sep 2024 22:26:51 GMT'})
+2024-09-06 03:56:58,282 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:56:58,282 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/url {'url': 'https://practicetestautomation.com/practice-test-login/'}
+2024-09-06 03:57:01,305 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/url HTTP/1.1" 200 0
+2024-09-06 03:57:01,306 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:26:58 GMT'})
+2024-09-06 03:57:01,306 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:04,310 - tests.test_login - INFO - Starting login test with username: student
+2024-09-06 03:57:04,311 - pages.login_page - DEBUG - Entering username: student
+2024-09-06 03:57:04,312 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/element {'using': 'css selector', 'value': '[id="username"]'}
+2024-09-06 03:57:04,339 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/element HTTP/1.1" 200 0
+2024-09-06 03:57:04,339 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2bc1d466-dc1c-4e49-bf91-5a8e1d918511"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:27:04 GMT'})
+2024-09-06 03:57:04,339 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:04,341 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/element/2bc1d466-dc1c-4e49-bf91-5a8e1d918511/value {'text': 'student', 'value': ['s', 't', 'u', 'd', 'e', 'n', 't']}
+2024-09-06 03:57:04,403 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/element/2bc1d466-dc1c-4e49-bf91-5a8e1d918511/value HTTP/1.1" 200 0
+2024-09-06 03:57:04,403 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:27:04 GMT'})
+2024-09-06 03:57:04,404 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:04,404 - pages.login_page - DEBUG - Entering password
+2024-09-06 03:57:04,404 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/element {'using': 'css selector', 'value': '[id="password"]'}
+2024-09-06 03:57:04,412 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/element HTTP/1.1" 200 0
+2024-09-06 03:57:04,412 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"edec182a-1eed-4e24-865d-96edf92a2b3e"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:27:04 GMT'})
+2024-09-06 03:57:04,412 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:04,412 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/element/edec182a-1eed-4e24-865d-96edf92a2b3e/value {'text': 'Password123', 'value': ['P', 'a', 's', 's', 'w', 'o', 'r', 'd', '1', '2', '3']}
+2024-09-06 03:57:04,436 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/element/edec182a-1eed-4e24-865d-96edf92a2b3e/value HTTP/1.1" 200 0
+2024-09-06 03:57:04,437 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:27:04 GMT'})
+2024-09-06 03:57:04,437 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:04,437 - pages.login_page - DEBUG - Clicking login button
+2024-09-06 03:57:04,437 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/element {'using': 'css selector', 'value': '[id="submit"]'}
+2024-09-06 03:57:04,441 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/element HTTP/1.1" 200 0
+2024-09-06 03:57:04,442 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"94c1b2de-917b-4485-8b59-3b004dc68a5c"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:27:04 GMT'})
+2024-09-06 03:57:04,442 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:04,442 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/element/94c1b2de-917b-4485-8b59-3b004dc68a5c/click {}
+2024-09-06 03:57:09,013 - urllib3.connectionpool - DEBUG - http://localhost:62483 "POST /session/2cafae62-702a-4966-9290-c28029ddd40c/element/94c1b2de-917b-4485-8b59-3b004dc68a5c/click HTTP/1.1" 200 0
+2024-09-06 03:57:09,013 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:27:04 GMT'})
+2024-09-06 03:57:09,014 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:09,014 - tests.test_login - INFO - Login button clicked
+2024-09-06 03:57:09,014 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/title {}
+2024-09-06 03:57:09,019 - urllib3.connectionpool - DEBUG - http://localhost:62483 "GET /session/2cafae62-702a-4966-9290-c28029ddd40c/title HTTP/1.1" 200 0
+2024-09-06 03:57:09,019 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:27:09 GMT'})
+2024-09-06 03:57:09,019 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:09,020 - pages.login_page - DEBUG - Page title after login: Logged In Successfully | Practice Test Automation
+2024-09-06 03:57:09,020 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c/title {}
+2024-09-06 03:57:09,026 - urllib3.connectionpool - DEBUG - http://localhost:62483 "GET /session/2cafae62-702a-4966-9290-c28029ddd40c/title HTTP/1.1" 200 0
+2024-09-06 03:57:09,026 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:27:09 GMT'})
+2024-09-06 03:57:09,026 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2024-09-06 03:57:09,149 - selenium.webdriver.remote.remote_connection - DEBUG - DELETE http://localhost:62483/session/2cafae62-702a-4966-9290-c28029ddd40c {}
+2024-09-06 03:57:10,249 - urllib3.connectionpool - DEBUG - http://localhost:62483 "DELETE /session/2cafae62-702a-4966-9290-c28029ddd40c HTTP/1.1" 200 0
+2024-09-06 03:57:10,249 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:27:09 GMT'})
+2024-09-06 03:57:10,249 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: C:\Users\91900\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --debug --language-binding python --output json
+DEBUG:selenium.webdriver.common.selenium_manager:geckodriver not found in PATH
+DEBUG:selenium.webdriver.common.selenium_manager:firefox detected at C:\Program Files\Mozilla Firefox\firefox.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: wmic datafile where name='C:\\Program Files\\Mozilla Firefox\\firefox.exe' get Version /value
+DEBUG:selenium.webdriver.common.selenium_manager:Output: "\r\r\n\r\r\nVersion=127.0.0.8923\r\r\n\r\r\n\r\r\n\r"
+DEBUG:selenium.webdriver.common.selenium_manager:Detected browser: firefox 127.0.0.8923
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: geckodriver 0.35.0
+DEBUG:selenium.webdriver.common.selenium_manager:geckodriver 0.35.0 already in the cache
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: C:\Program Files\Mozilla Firefox\firefox.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Using driver at: C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\91900\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe` in a child process with pid: 11528 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'firefox', 'acceptInsecureCerts': True, 'moz:debuggerAddress': True, 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'moz:firefoxOptions': {'binary': 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:64216
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"sessionId":"f5b4d9df-150f-4738-85ee-c81fd7164475","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"127.0","moz:accessibilityChecks":false,"moz:buildID":"20240606181944","moz:debuggerAddress":"127.0.0.1:64217","moz:geckodriverVersion":"0.35.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":7204,"moz:profile":"C:\\Users\\91900\\AppData\\Local\\Temp\\rust_mozprofile9tMjnz","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0"}}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '838', 'date': 'Thu, 05 Sep 2024 22:51:55 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/url {'url': 'https://practicetestautomation.com/practice-test-login/'}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:52:02 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:tests.test_login:Starting login test with username: student
+DEBUG:pages.login_page:Entering username: student
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/element {'using': 'css selector', 'value': '[id="username"]'}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2df876fa-978c-4e56-a144-5070f83f80d5"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:52:07 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/element/2df876fa-978c-4e56-a144-5070f83f80d5/value {'text': 'student', 'value': ['s', 't', 'u', 'd', 'e', 'n', 't']}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/element/2df876fa-978c-4e56-a144-5070f83f80d5/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:52:07 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:pages.login_page:Entering password
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/element {'using': 'css selector', 'value': '[id="password"]'}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f8317b1d-ad1c-424c-8fa9-71d44a1047f3"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:52:07 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/element/f8317b1d-ad1c-424c-8fa9-71d44a1047f3/value {'text': 'Password123', 'value': ['P', 'a', 's', 's', 'w', 'o', 'r', 'd', '1', '2', '3']}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/element/f8317b1d-ad1c-424c-8fa9-71d44a1047f3/value HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:52:07 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:pages.login_page:Clicking login button
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/element {'using': 'css selector', 'value': '[id="submit"]'}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/element HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2b546bd2-99d5-4cc1-8dbc-5c598d75e3ad"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Thu, 05 Sep 2024 22:52:07 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/element/2b546bd2-99d5-4cc1-8dbc-5c598d75e3ad/click {}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "POST /session/f5b4d9df-150f-4738-85ee-c81fd7164475/element/2b546bd2-99d5-4cc1-8dbc-5c598d75e3ad/click HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:52:07 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:tests.test_login:Login button clicked
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/title {}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "GET /session/f5b4d9df-150f-4738-85ee-c81fd7164475/title HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:52:09 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:pages.login_page:Page title after login: Logged In Successfully | Practice Test Automation
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475/title {}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "GET /session/f5b4d9df-150f-4738-85ee-c81fd7164475/title HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"Logged In Successfully | Practice Test Automation"} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '61', 'date': 'Thu, 05 Sep 2024 22:52:09 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:64216/session/f5b4d9df-150f-4738-85ee-c81fd7164475 {}
+DEBUG:urllib3.connectionpool:http://localhost:64216 "DELETE /session/f5b4d9df-150f-4738-85ee-c81fd7164475 HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Thu, 05 Sep 2024 22:52:09 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

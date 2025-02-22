@@ -25,12 +25,6 @@ def test_login(driver):
     login_page.click_login_button()
     logger.info("Login button clicked")
 
-    assert login_page.is_login_successful(), "Login failed or title does not match."
+    assert login_page.is_login_successful()
     logger.info("Login successful with title: %s", driver.title)
-
-
-
-
-
-
 
